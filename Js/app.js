@@ -8,8 +8,13 @@ year = parseInt(year);
 
 let costTicket;
 
-if(year >= 18 && year <= 64){
+if (year >= 18 && year <= 64) {
     costTicket = km * 0.21;
+} else if (year <= 17) {
+    costTicket = ((km * 0.21) * 20) / 100;
+} else if (year >= 65) {
+    costTicket = ((km * 0.21) * 40) / 100;
 }
 
-console.log(costTicket)
+costTicket = costTicket.toFixed(2);
+console.log(costTicket);
