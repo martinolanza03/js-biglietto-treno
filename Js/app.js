@@ -17,4 +17,4 @@ if (year >= 18 && year <= 64) {
 }
 
 costTicket = costTicket.toFixed(2);
-console.log(costTicket);
+console.log(`Il costo del biglietto è di ${costTicket} €`);
